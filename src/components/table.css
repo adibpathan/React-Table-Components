@@ -1,0 +1,178 @@
+/* General Table Styles */
+.table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 10px;
+}
+
+.th, .td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tr:hover {
+    background-color: #ddd;
+}
+
+.th {
+    padding: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #1f0233;
+    color: #f5f2f2;
+}
+
+/* Global Filter Styling */
+.global-filter {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.global-filter input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+    transition: border-color 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.global-filter input:focus {
+    outline: none;
+    border-color: #1f0233;
+    box-shadow: 0 0 6px rgba(31, 2, 51, 0.5);
+}
+
+/* Pagination Button Styling */
+.pagination-buttons {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.pagination-buttons span {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.page-input {
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.page-size-select {
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.pagination-button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #1f0233;
+    border-radius: 4px;
+    background-color: #1f0233;
+    color: #f5f2f2;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    margin-left: 2px;
+}
+
+.pagination-button:hover {
+    background-color: #f5f2f2;
+    color: #1f0233;
+}
+
+.pagination-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.excel-export-button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .excel-export-button:hover {
+    background-color: #0056b3;
+  }
+  
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .global-filter input {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .page-input {
+        width: 60px;
+    }
+
+    .page-size-select {
+        width: 100px;
+    }
+
+    .pagination-button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .global-filter input {
+        max-width: 100%;
+    }
+
+    .page-input {
+        width: 50px;
+    }
+
+    .page-size-select {
+        width: 80px;
+    }
+
+    .pagination-button {
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .global-filter input {
+        font-size: 12px;
+    }
+
+    .page-input {
+        width: 40px;
+    }
+
+    .page-size-select {
+        width: 60px;
+    }
+
+    .pagination-button {
+        padding: 2px 6px;
+        font-size: 8px;
+    }
+}

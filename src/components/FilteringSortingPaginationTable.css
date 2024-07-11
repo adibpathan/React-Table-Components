@@ -1,0 +1,20 @@
+.form-container{
+    width: 70%;
+    margin: auto;
+    margin-top: 4px;
+}
+
+.form-container .form-input input{
+    width: 100%;
+    padding-left: 2px;
+    padding: 3px;
+    border-radius: 4px;
+    margin-top: 2px;
+    background-color: rgb(241, 236, 236);
+    color: black;
+    border: 1px solid white;
+}
+
+.excel-export-button{
+    margin-right: 5px;
+}
